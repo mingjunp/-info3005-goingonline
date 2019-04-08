@@ -15,7 +15,7 @@ app.use("/",router);
 
 
 //start the server with listen
-app.listen(3000,function () {
+app.listen(process.env.PORT||3000,function () {
     console.log("开启");
     //http://localhost:3000/homepage
 });
